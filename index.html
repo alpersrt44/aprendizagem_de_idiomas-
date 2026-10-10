@@ -45,6 +45,31 @@
     @media(max-width:800px){.layout{display:block}.sidebar{position:fixed;top:auto;bottom:0;left:0;right:0;width:100%;height:69px;z-index:60;padding:8px 10px;background:#17182f;display:flex;flex-direction:row;justify-content:space-around;box-shadow:0 -6px 25px #17182f35}.brand,.section-small,.sidebar-bottom{display:none}.navbtn{width:auto;min-width:65px;padding:7px 4px;margin:0;display:flex;flex-direction:column;gap:1px;justify-content:center;align-items:center;font-size:9px;border-radius:11px}.navbtn .ico{font-size:20px}.navbtn.active{box-shadow:inset 0 2px 0 #e78ba9}.main{padding:0 16px 94px}.topbar{height:77px}.mobile-brand{display:block;font-weight:860;font-size:17px;color:var(--ink)}.breadcrumb{display:block}.desktop-breadcrumb{display:none}.hello{margin-top:12px}.date-pill{display:none}.hero{padding:24px;min-height:225px}.hero-art{opacity:.3;right:5%}.hero-copy{max-width:100%}.stats{gap:9px}.stat{padding:12px 9px;gap:7px}.stat-icon{width:36px;height:36px;font-size:18px}.stat small{font-size:9px}.stat strong{font-size:17px}.two-col,.learn-main,.chat-shell{grid-template-columns:1fr}.chat-panel{height:560px;min-height:unset}.progress-grid{grid-template-columns:1fr}.chat-shell>.col-side{display:grid;grid-template-columns:1fr 1fr;gap:12px}.chat-shell>.col-side .sidebar-card{margin:0}}
     @media(max-width:520px){.main{padding:0 12px 90px}.lang-pill{padding:8px;font-size:10px}.circle-avatar{display:none}.hello h1{font-size:28px}.hello p{font-size:12px}.hero h2{font-size:26px}.hero{border-radius:18px;min-height:220px}.hero-art{font-size:86px}.hero p{max-width:260px}.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.stat{flex-direction:column;align-items:flex-start;gap:6px;padding:12px 10px}.stat strong{font-size:18px}.stat-icon{height:31px;width:31px;border-radius:8px;font-size:17px}.lessons{gap:10px}.lesson{padding:13px;border-radius:14px}.lesson-art{width:43px;height:43px;font-size:21px}.lesson h3{font-size:13px}.lesson p{font-size:10px}.lesson-number{font-size:9px;padding:4px 6px}.lesson-bottom button{font-size:10px}.section-heading h2{font-size:17px}.panel{padding:16px}.answers{grid-template-columns:1fr}.quiz-card{padding:20px}.learn-header,.quiz-header,.progress-header{align-items:flex-start;flex-direction:column}.chat-shell>.col-side{grid-template-columns:1fr}.flash-word{font-size:26px}.chat-log{padding:13px}.msg{max-width:95%}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+    /* Lingo Amor 2.0: levels, gentle corrections, voice & romantic conversation */
+    .journey-section{margin-top:25px}.journey-head{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+    .journey-head p{font-size:12px;line-height:1.6;color:#8589a1;margin:6px 0 0}
+    .level-tabs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin:14px 0}.level-tab{border:1px solid #e6e3f5;background:#fff;color:#6e6c89;border-radius:12px;padding:13px 6px;min-width:0;text-align:center;font-weight:800;font-size:13px}
+    .level-tab small{font-size:9px;font-weight:600;display:block;margin-top:4px;color:#9999ae}.level-tab.active{background:var(--purple);color:#fff;border-color:var(--purple)}.level-tab.active small{color:#eeeaff}
+    .level-route{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);gap:14px}.level-route .panel{padding:21px}
+    .phrase-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #eeeef7}.phrase-row:last-child{border:0}.phrase-row p{margin:4px 0 0;font-size:12px;color:#9b9bab}.phrase-row strong{font-size:13px;color:#3d3d58}.phrase-row div{min-width:0;flex:1}
+    .level-task{font-size:12px;color:#77778c;line-height:1.7}.level-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .romance-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.romance-card{border:1px solid #f3e6ed;border-radius:15px;background:#fffafb;padding:17px;min-width:0}
+    .romance-card h3{font-size:14px}.romance-card .romance-line{margin:12px 0 0;padding-top:11px;border-top:1px solid #f5e9ef}.romance-line p{font-size:12px;color:#9792a7;margin:3px 0}.romance-line b{font-size:12px;overflow-wrap:anywhere}
+    .voice-options{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:9px 17px;background:#fff;border-top:1px solid #f0eef7;font-size:11px;color:#77788d}
+    .voice-options label{display:flex;gap:5px;align-items:center}.voice-options select,.ai-options select{border:1px solid #e7e3f4;border-radius:9px;padding:7px 9px;background:#fbfaff;font-size:11px;color:#5b5485;max-width:100%}
+    .voice-options .checkbox-line{white-space:normal}.voice-options input[type=checkbox]{accent-color:var(--purple)}
+    .msg-body{display:flex;align-items:flex-end;gap:6px;min-width:0}.msg-body .bubble{min-width:0}.msg-voice{flex:none;border:1px solid #e7e3fa;border-radius:9px;background:#f9f7ff;color:#6357ca;padding:7px;font-size:12px;line-height:1}
+    .msg.mine .msg-voice{display:none}.mic-listening{background:#ffe5ed!important;color:#c13362!important;animation:micPulse 1.2s ease-in-out infinite}
+    @keyframes micPulse{50%{box-shadow:0 0 0 7px #ffb3cb66}}
+    .ai-options{display:grid;gap:10px}.ai-options label{display:grid;gap:5px;color:#65667d;font-size:11px;font-weight:750}
+    .ai-options select{width:100%;padding:10px}.ai-options small{color:#9497a9;font-size:10px;line-height:1.55}
+    .level-progress{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #f1eef9;font-size:12px}
+    .level-progress:last-child{border:0}.level-progress em{font-size:10px;font-style:normal;color:#87849a}
+    .voice-hint{font-size:10px;color:#938da7;padding:0 18px 8px}
+    @media(max-width:960px){.level-route{grid-template-columns:1fr}.level-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:650px){.romance-grid{grid-template-columns:1fr}.level-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}.voice-options{align-items:stretch;gap:8px}.voice-options label{flex:1}.chat-panel{min-height:560px;height:min(750px,calc(100dvh - 165px))}.level-actions .btn{flex:1}}
+    @media(prefers-reduced-motion:reduce){.mic-listening{animation:none}}
   </style>
 </head>
 <body>
@@ -81,17 +106,26 @@
     <section class="tab" id="tab-learn">
       <div class="learn-header"><div><div class="eyebrow">APRENDA NO SEU RITMO</div><h1>Minhas aulas 📚</h1><p class="section-caption">Toque no áudio para ouvir e marque as frases aprendidas.</p></div><select class="lesson-select" id="lessonSelect" aria-label="Selecionar aula" style="max-width:230px"></select></div>
       <div class="learn-main"><div class="panel"><div class="panel-head"><div><h2 id="learnTitle">Primeiras palavras</h2><p id="learnSubtitle">8 palavras e frases</p></div><button class="btn btn-soft btn-small" id="markAll">✓ Aprendi tudo</button></div><div id="wordList"></div></div><div class="panel lesson-details"><div class="big-emoji" id="learnEmoji">👋</div><div class="eyebrow">AULA DO DIA</div><h2 id="learnSideTitle">Cumprimentos</h2><p id="learnDesc">Comece com palavras que abrem portas e corações.</p><div class="tipnote">🎧 Dica: ouça cada expressão e repita em voz alta. A pronúncia fica melhor com prática!</div><div style="margin-top:17px"><button class="btn btn-primary" data-go="practice">Praticar agora 🎯</button></div></div></div>
+      <div class="journey-section" id="levelJourney">
+        <div class="journey-head"><div><div class="eyebrow">DO A1 AO C2</div><h2>🌱 Trilha de conversação por nível</h2><p>Escolha seu nível, pratique frases reais e peça uma aula personalizada à Luna. Concluir um treino não é um certificado de proficiência.</p></div><span class="pill" id="levelBadge">A1 · Iniciante</span></div>
+        <div class="level-tabs" id="levelTabs" role="group" aria-label="Selecionar nível do idioma"></div>
+        <div class="level-route" id="levelDetails"></div>
+      </div>
+      <div class="journey-section" id="romanceJourney">
+        <div class="journey-head"><div><div class="eyebrow">CONVERSE COM CARINHO</div><h2>💕 Conversas românticas</h2><p>Diálogos curtos com tradução em português. Ouça as frases e treine com a Luna.</p></div></div>
+        <div class="romance-grid" id="romanceGrid"></div>
+      </div>
     </section>
 
     <section class="tab" id="tab-practice"><div class="practice-shell"><div class="quiz-header"><div><div class="eyebrow">TREINE E GANHE XP</div><h1>Hora de praticar 🎯</h1><p class="section-caption">Escolha a tradução correta. Cada resposta certa vale 10 XP.</p></div><button class="btn btn-border btn-small" id="restartQuiz">↻ Novo teste</button></div><div class="quiz-card" id="quizArea"></div></div></section>
 
     <section class="tab" id="tab-chat"><div class="learn-header"><div><div class="eyebrow">CONVERSE SEM MEDO</div><h1>Sua tutora de IA ✨</h1><p class="section-caption">Pratique conversas reais, receba correções e tire dúvidas em português.</p></div><span class="pill">🤍 Professora paciente</span></div>
       <div class="chat-shell"><div class="chat-panel"><div class="chat-head"><div class="ai-avatar">🤖</div><div style="flex:1"><h3>Luna · Sua tutora particular</h3><div class="status" id="aiStatus">● Verificando conexão...</div></div><button class="btn btn-border btn-small" id="clearChat" title="Recomeçar a conversa">↻ Reiniciar</button></div>
-          <div class="chat-log" id="chatLog" aria-live="polite"></div><div class="chat-suggestions" id="chatSuggestions"><button class="chip" data-prompt="Me ensine 3 frases românticas e como pronunciá-las.">💕 Frases de amor</button><button class="chip" data-prompt="Vamos praticar uma conversa simples no restaurante.">☕ No restaurante</button><button class="chip" data-prompt="Faça perguntas fáceis e corrija meus erros, por favor.">🗣️ Conversar</button></div><form class="chat-compose" id="chatForm"><input id="chatInput" maxlength="1200" autocomplete="off" aria-label="Mensagem para a tutora" placeholder="Escreva aqui em português, turco ou espanhol..."/><button class="btn btn-soft btn-icon" type="button" id="micBtn" title="Ditado por voz (quando compatível)" aria-label="Falar no microfone">🎙️</button><button class="btn btn-primary btn-icon" type="submit" id="sendBtn" title="Enviar mensagem" aria-label="Enviar mensagem">➤</button></form>
-        </div><div class="col-side"><div class="sidebar-card"><div class="bubble-title">🌍 Idioma da conversa</div><div class="pill" id="chatLang">🇹🇷 Turco</div><p>Luna explica em português brasileiro e ajuda você a formar frases naturais no idioma escolhido.</p><div class="warning" id="aiWarning">Conecte o servidor de IA para liberar conversas personalizadas. As aulas e os testes funcionam sem ele.</div><div class="ai-access" style="margin-top:14px"><label for="aiAccessCode">🔒 Código de acesso à Luna</label><input id="aiAccessCode" type="password" autocomplete="off" placeholder="Código enviado pelo seu amor" maxlength="128"><button class="btn btn-soft btn-small" id="saveAccess" type="button">Salvar código nesta aba</button><button class="btn btn-border btn-small" id="retryAI" type="button">↻ Verificar conexão</button><small>O código fica apenas nesta sessão do navegador e não é publicado no GitHub. Nunca digite aqui uma chave da API Gemini.</small></div></div><div class="sidebar-card"><div class="bubble-title">✨ Ideias para conversar</div><div class="topics"><button data-prompt="Como se diz 'Estou com saudade de você'? Explique palavra por palavra.">Saudades 💗</button><button data-prompt="Explique como me apresentar de um jeito natural.">Me apresentar 👋</button><button data-prompt="Monte um diálogo curtinho com tradução.">Diálogo simples ☕</button><button data-prompt="Me ensine uma expressão popular e quando usar.">Expressão local 🧠</button></div></div></div></div>
+          <div class="chat-log" id="chatLog" aria-live="polite"></div><div class="chat-suggestions" id="chatSuggestions"><button class="chip" data-prompt="Me ensine 3 frases românticas e como pronunciá-las.">💕 Frases de amor</button><button class="chip" data-prompt="Vamos praticar uma conversa simples no restaurante.">☕ No restaurante</button><button class="chip" data-prompt="Faça perguntas fáceis e corrija meus erros, por favor.">🗣️ Conversar</button></div><div class="voice-options" role="group" aria-label="Configurações de voz"><label for="micLanguage">🎙️ Falar em <select id="micLanguage" aria-label="Idioma do microfone"><option value="target">Idioma estudado</option><option value="pt-BR">Português (Brasil)</option></select></label><label class="checkbox-line"><input type="checkbox" id="autoSendVoice"> Enviar ao terminar de falar</label><label class="checkbox-line"><input type="checkbox" id="autoReadVoice"> 🔊 Luna fala as respostas</label></div><div class="voice-hint" id="voiceHint">Toque no microfone, fale e revise o texto antes de enviar.</div><form class="chat-compose" id="chatForm"><input id="chatInput" maxlength="1200" autocomplete="off" aria-label="Mensagem para a tutora" placeholder="Escreva aqui em português, turco ou espanhol..."/><button class="btn btn-soft btn-icon" type="button" id="micBtn" aria-pressed="false" title="Iniciar ou parar reconhecimento de fala" aria-label="Falar no microfone">🎙️</button><button class="btn btn-primary btn-icon" type="submit" id="sendBtn" title="Enviar mensagem" aria-label="Enviar mensagem">➤</button></form>
+        </div><div class="col-side"><div class="sidebar-card"><div class="bubble-title">🌍 Idioma da conversa</div><div class="pill" id="chatLang">🇹🇷 Turco</div><p>Luna explica em português brasileiro e ajuda você a formar frases naturais no idioma escolhido.</p><div class="warning" id="aiWarning">Conecte o servidor de IA para liberar conversas personalizadas. As aulas e os testes funcionam sem ele.</div><div class="ai-options" style="margin-top:15px"><label for="aiLevel">📚 Nível da conversa<select id="aiLevel"><option value="A1">A1 · Iniciante</option><option value="A2">A2 · Básico</option><option value="B1">B1 · Intermediário</option><option value="B2">B2 · Independente</option><option value="C1">C1 · Avançado</option><option value="C2">C2 · Proficiente</option></select></label><label for="aiMode">✍️ Tipo de prática<select id="aiMode"><option value="chat">Conversação com correções</option><option value="correction">Corrigir minha frase</option><option value="romance">Diálogo romântico</option></select></label><small>As correções de fala usam a transcrição reconhecida pelo navegador, não analisam a acústica da pronúncia.</small></div><div class="ai-access" style="margin-top:14px"><label for="aiAccessCode">🔒 Código de acesso à Luna</label><input id="aiAccessCode" type="password" autocomplete="off" placeholder="Código enviado pelo seu amor" maxlength="128"><button class="btn btn-soft btn-small" id="saveAccess" type="button">Salvar código nesta aba</button><button class="btn btn-border btn-small" id="retryAI" type="button">↻ Verificar conexão</button><small>O código fica apenas nesta sessão do navegador e não é publicado no GitHub. Nunca digite aqui uma chave da API Gemini.</small></div></div><div class="sidebar-card"><div class="bubble-title">✨ Ideias para conversar</div><div class="topics"><button data-prompt="Como se diz 'Estou com saudade de você'? Explique palavra por palavra.">Saudades 💗</button><button data-prompt="Explique como me apresentar de um jeito natural.">Me apresentar 👋</button><button data-prompt="Monte um diálogo curtinho com tradução.">Diálogo simples ☕</button><button data-prompt="Me ensine uma expressão popular e quando usar.">Expressão local 🧠</button></div></div></div></div>
     </section>
 
-    <section class="tab" id="tab-progress"><div class="progress-header"><div><div class="eyebrow">CADA PASSO IMPORTA</div><h1>Meu progresso 📈</h1><p class="section-caption">Olha só o quanto você já aprendeu. Continue brilhando!</p></div><button class="btn btn-border btn-small" id="resetProgress">Reiniciar meus dados</button></div><div class="progress-grid"><div class="panel progress-panel"><h2>⭐ Seus pontos</h2><div class="progress-main-number" id="progXP">0 XP</div><p class="progress-foot">Acerte as perguntas do quiz para ganhar ainda mais!</p></div><div class="panel progress-panel"><h2>🔥 Sua sequência</h2><div class="progress-main-number" id="progStreak">0 dias</div><p class="progress-foot">Estude em dias consecutivos para manter a chama acesa.</p></div><div class="panel progress-panel"><h2>🇹🇷 Progresso no turco</h2><div class="progress-main-number" id="progTR">0%</div><div class="meter"><div class="meter-fill" id="meterTR" style="width:0%"></div></div><p class="progress-foot" id="progTRText">0 palavras aprendidas</p></div><div class="panel progress-panel"><h2>🇪🇸 Progresso no espanhol</h2><div class="progress-main-number" id="progES">0%</div><div class="meter"><div class="meter-fill" id="meterES" style="width:0%"></div></div><p class="progress-foot" id="progESText">0 palavras aprendidas</p></div><div class="panel progress-panel" style="grid-column:1/-1"><h2>📚 Aulas concluídas</h2><div id="progressLessons"></div></div></div></section>
+    <section class="tab" id="tab-progress"><div class="progress-header"><div><div class="eyebrow">CADA PASSO IMPORTA</div><h1>Meu progresso 📈</h1><p class="section-caption">Olha só o quanto você já aprendeu. Continue brilhando!</p></div><button class="btn btn-border btn-small" id="resetProgress">Reiniciar meus dados</button></div><div class="progress-grid"><div class="panel progress-panel"><h2>⭐ Seus pontos</h2><div class="progress-main-number" id="progXP">0 XP</div><p class="progress-foot">Acerte as perguntas do quiz para ganhar ainda mais!</p></div><div class="panel progress-panel"><h2>🔥 Sua sequência</h2><div class="progress-main-number" id="progStreak">0 dias</div><p class="progress-foot">Estude em dias consecutivos para manter a chama acesa.</p></div><div class="panel progress-panel"><h2>🇹🇷 Progresso no turco</h2><div class="progress-main-number" id="progTR">0%</div><div class="meter"><div class="meter-fill" id="meterTR" style="width:0%"></div></div><p class="progress-foot" id="progTRText">0 palavras aprendidas</p></div><div class="panel progress-panel"><h2>🇪🇸 Progresso no espanhol</h2><div class="progress-main-number" id="progES">0%</div><div class="meter"><div class="meter-fill" id="meterES" style="width:0%"></div></div><p class="progress-foot" id="progESText">0 palavras aprendidas</p></div><div class="panel progress-panel" style="grid-column:1/-1"><h2>📚 Aulas concluídas</h2><div id="progressLessons"></div></div><div class="panel progress-panel" style="grid-column:1/-1"><h2>🌱 Treinos A1–C2 realizados</h2><p class="progress-foot">Atividades registradas, não certificados de nível.</p><div id="levelPracticeProgress"></div></div></div></section>
     <p class="footnote">Feito com muito carinho 💜 · Lingo Amor · Aprender também é uma forma de amar.<br>Seus pontos ficam salvos neste navegador. A voz depende da disponibilidade do dispositivo.</p>
   </main>
 </div>
@@ -140,8 +174,8 @@ function allWords(l=language){return curriculum[l].flatMap(lesson=>lesson.words.
 function langDone(l){return saved.completed[l].length}
 function renderStats(){const count=langDone('tr')+langDone('es');$('statXP').textContent=`${saved.xp||0} XP`;$('statWords').textContent=count;$('statStreak').textContent=`${saved.streak||0} ${saved.streak===1?'dia':'dias'}`;}
 function speak(word){if(!('speechSynthesis' in window)){toast('Seu navegador não oferece leitura em voz alta.');return}window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(word);u.lang=codes[language];u.rate=.78;u.pitch=1;window.speechSynthesis.speak(u)}
-function activateTab(tab){document.querySelectorAll('.tab').forEach(el=>el.classList.toggle('active',el.id===`tab-${tab}`));document.querySelectorAll('.navbtn').forEach(el=>el.classList.toggle('active',el.dataset.tab===tab));$('breadcrumb').textContent={home:'Início',learn:'Minhas aulas',practice:'Praticar',chat:'Tutora IA',progress:'Meu progresso'}[tab];if(tab==='learn')renderLearn();if(tab==='practice'&&!quiz.length)newQuiz();if(tab==='progress')renderProgress();if(tab==='chat')renderChatHeader();window.scrollTo({top:0,behavior:'smooth'})}
-function selectLanguage(l){if(language===l)return;language=l;document.querySelectorAll('.lang-pill').forEach(el=>{const yes=el.dataset.lang===l;el.classList.toggle('selected',yes);el.setAttribute('aria-pressed',yes)});lessonIndex=0;flashIndex=0;flashBack=false;quiz=[];newQuiz();resetChat();renderHome();renderLearn();renderProgress();renderChatHeader();toast(`Agora você está estudando ${names[l].toLowerCase()}! ${flags[l]}`)}
+function activateTab(tab){if(tab!=='chat')clearVoice();document.querySelectorAll('.tab').forEach(el=>el.classList.toggle('active',el.id===`tab-${tab}`));document.querySelectorAll('.navbtn').forEach(el=>el.classList.toggle('active',el.dataset.tab===tab));$('breadcrumb').textContent={home:'Início',learn:'Minhas aulas',practice:'Praticar',chat:'Tutora IA',progress:'Meu progresso'}[tab];if(tab==='learn')renderLearn();if(tab==='practice'&&!quiz.length)newQuiz();if(tab==='progress')renderProgress();if(tab==='chat')renderChatHeader();window.scrollTo({top:0,behavior:'smooth'})}
+function selectLanguage(l){if(language===l)return;language=l;document.querySelectorAll('.lang-pill').forEach(el=>{const yes=el.dataset.lang===l;el.classList.toggle('selected',yes);el.setAttribute('aria-pressed',yes)});lessonIndex=0;flashIndex=0;flashBack=false;quiz=[];newQuiz();resetChat();renderHome();renderLearn();renderProgress();renderRoutes();renderRomance();renderLevelProgress();$('aiLevel').value=getCurrentLevel();renderChatHeader();toast(`Agora você está estudando ${names[l].toLowerCase()}! ${flags[l]}`)}
 function lessonCard(lesson,index){const n=lesson.words.filter((_,i)=>known(language,lesson,i)).length,p=Math.round(n/lesson.words.length*100);return `<article class="lesson"><div class="lesson-top"><div class="lesson-art" style="background:${lesson.color}">${lesson.emoji}</div><span class="lesson-number">AULA 0${index+1}</span></div><div><h3>${escapeHTML(lesson.title)}</h3><p>${escapeHTML(lesson.desc)}</p></div><div class="mini-progress"><div style="width:${p}%"></div></div><div class="lesson-bottom"><small>${n}/${lesson.words.length} aprendidas</small><button data-open-lesson="${index}" aria-label="Abrir aula ${escapeHTML(lesson.title)}">Estudar →</button></div></article>`}
 function renderHome(){renderStats();$('homeLessons').innerHTML=curriculum[language].map(lessonCard).join('');renderFlash()}
 function flashWord(){return curriculum[language][0].words[flashIndex%curriculum[language][0].words.length]}
@@ -153,7 +187,7 @@ function toggleKnown(i){const id=wordKey(curriculum[language][lessonIndex],i),se
 function newQuiz(){quiz=randomize(allWords(language)).slice(0,10);questionIndex=0;quizScore=0;answered=false;renderQuiz()}
 function renderQuiz(){const box=$('quizArea');if(questionIndex>=quiz.length){box.innerHTML=`<div class="result"><div class="trophy">${quizScore>=8?'🏆':'🌟'}</div><h2>${quizScore>=8?'Você arrasou!':'Muito bem, continue assim!'}</h2><p>Você acertou <b>${quizScore} de ${quiz.length}</b> perguntas.<br>Ganhou <b>+${quizScore*10} XP</b>! Cada tentativa faz parte do aprendizado.</p><button class="btn btn-primary" id="quizAgain">Fazer outro teste ↻</button></div>`;return}const word=quiz[questionIndex],correct=word.target;const pool=randomize([...new Set(allWords(language).map(w=>w.target).filter(w=>w!==correct))]).slice(0,3);const options=randomize([correct,...pool]);box.innerHTML=`<div class="quiz-top"><span>PERGUNTA ${questionIndex+1} DE ${quiz.length}</span><span>⭐ ${quizScore*10} XP nesta rodada</span></div><div class="quiz-bar"><div style="width:${(questionIndex/quiz.length)*100}%"></div></div><div class="quiz-label">Como se diz em ${names[language].toLowerCase()}?</div><div class="quiz-q">${escapeHTML(word.pt)}</div><p class="quiz-help">Escolha a tradução correta abaixo.</p><div class="answers">${options.map((opt,i)=>`<button class="answer" data-choice="${i}" data-text="${escapeHTML(opt)}">${escapeHTML(opt)}</button>`).join('')}</div><div id="quizFeedback" aria-live="polite"></div><div class="quiz-next"><button class="btn btn-primary" id="nextQuestion" style="visibility:hidden">${questionIndex===quiz.length-1?'Ver resultado':'Próxima pergunta →'}</button></div>`;answered=false}
 function chooseAnswer(button){if(answered)return;answered=true;const correct=quiz[questionIndex].target;const guess=button.dataset.text;document.querySelectorAll('.answer').forEach(b=>{b.disabled=true;if(b.dataset.text===correct)b.classList.add('correct');else if(b===button)b.classList.add('wrong')});if(guess===correct){quizScore++;saved.xp=(Number(saved.xp)||0)+10;study();save();$('quizFeedback').innerHTML='<div class="quiz-feedback">✅ Isso mesmo! Você acertou. +10 XP!</div>'}else{$('quizFeedback').innerHTML=`<div class="quiz-feedback">💡 Quase! A resposta correta é <b>${escapeHTML(correct)}</b>. Continue praticando!</div>`}$('nextQuestion').style.visibility='visible'}
-function renderProgress(){const total=curriculum.tr.reduce((acc,l)=>acc+l.words.length,0);$('progXP').textContent=`${saved.xp||0} XP`;$('progStreak').textContent=`${saved.streak||0} dias`;for(const l of ['tr','es']){const n=langDone(l),p=Math.round(n/total*100),u=l.toUpperCase();$(`prog${u}`).textContent=`${p}%`;$(`meter${u}`).style.width=`${p}%`;$(`prog${u}Text`).textContent=`${n} de ${total} expressões aprendidas`}$('progressLessons').innerHTML=['tr','es'].map(l=>`<h3 style="margin-top:17px">${flags[l]} ${names[l]}</h3>${curriculum[l].map(lesson=>{const n=lesson.words.filter((_,i)=>known(l,lesson,i)).length;return `<div class="progress-lesson"><b>${lesson.emoji} ${escapeHTML(lesson.title)}</b><span>${n} de ${lesson.words.length} ${n===lesson.words.length?'✅':'palavras'}</span></div>`}).join('')}`).join('')}
+function renderProgress(){const total=curriculum.tr.reduce((acc,l)=>acc+l.words.length,0);$('progXP').textContent=`${saved.xp||0} XP`;$('progStreak').textContent=`${saved.streak||0} dias`;for(const l of ['tr','es']){const n=langDone(l),p=Math.round(n/total*100),u=l.toUpperCase();$(`prog${u}`).textContent=`${p}%`;$(`meter${u}`).style.width=`${p}%`;$(`prog${u}Text`).textContent=`${n} de ${total} expressões aprendidas`}$('progressLessons').innerHTML=['tr','es'].map(l=>`<h3 style="margin-top:17px">${flags[l]} ${names[l]}</h3>${curriculum[l].map(lesson=>{const n=lesson.words.filter((_,i)=>known(l,lesson,i)).length;return `<div class="progress-lesson"><b>${lesson.emoji} ${escapeHTML(lesson.title)}</b><span>${n} de ${lesson.words.length} ${n===lesson.words.length?'✅':'palavras'}</span></div>`}).join('')}`).join('');renderLevelProgress()}
 const aiApiUrl = String(window.LINGO_AMOR_API_URL || '').trim().replace(/\/$/, '');
 let aiAccessCode = '';
 try { aiAccessCode = sessionStorage.getItem('lingo_amor_access_code') || ''; } catch {}
@@ -166,8 +200,18 @@ function renderChatHeader(){
     (aiAccessCode?'✅ Luna está pronta! Pode escrever e começar sua aula.':'🔒 Luna está conectada. Digite seu código de acesso para conversar.'):
     'Aguardando servidor de IA. Toque em “Verificar conexão” se ele estiver iniciando. As aulas funcionam normalmente.';
 }
-function appendMsg(role,content){const msg=document.createElement('div');msg.className=`msg ${role==='user'?'mine':'theirs'}`;const avatar=document.createElement('div');avatar.className='msgavatar';avatar.textContent=role==='user'?'🌷':'🤖';const bubble=document.createElement('div');bubble.className='bubble';bubble.textContent=content;msg.append(avatar,bubble);$('chatLog').append(msg);$('chatLog').scrollTop=$('chatLog').scrollHeight;return msg}
-function resetChat(){chatHistory=[];$('chatLog').innerHTML='';appendMsg('assistant',`Oi, querida! 💜 Eu sou a Luna, sua tutora de ${names[language].toLowerCase()}!\n\nVocê pode perguntar em português e aprender passo a passo. Vamos começar?`)}
+function appendMsg(role,content){
+  const msg=document.createElement('div');msg.className=`msg ${role==='user'?'mine':'theirs'}`;
+  const avatar=document.createElement('div');avatar.className='msgavatar';avatar.textContent=role==='user'?'🌷':'🤖';
+  const body=document.createElement('div');body.className='msg-body';
+  const bubble=document.createElement('div');bubble.className='bubble';formatBubble(bubble,content);body.append(bubble);
+  if(role!=='user'){
+    const audio=document.createElement('button');audio.type='button';audio.className='msg-voice';audio.textContent='🔊';audio.title='Ouvir a resposta da Luna';audio.setAttribute('aria-label','Ouvir esta resposta');
+    audio.onclick=()=>readLuna(bubble.textContent);body.append(audio);
+  }
+  msg.append(avatar,body);$('chatLog').append(msg);$('chatLog').scrollTop=$('chatLog').scrollHeight;return msg;
+}
+function resetChat(){clearVoice();stopReading();chatHistory=[];$('chatLog').innerHTML='';appendMsg('assistant',`Oi, querida! 💜 Eu sou a Luna, sua tutora de ${names[language].toLowerCase()}!\n\nVocê pode perguntar em português e aprender passo a passo. Vamos começar?`)}
 async function checkAI(){
   $('aiStatus').textContent='● Verificando conexão (pode levar até 1 minuto)...';
   $('retryAI').disabled=true;
@@ -178,34 +222,153 @@ async function checkAI(){
   $('retryAI').disabled=false;
   renderChatHeader();
 }
-async function sendChat(text){
+async function sendChat(text,spoken=false){
   text=String(text||'').trim();
   if(!text||busy)return;
   if(!aiOnline){toast('A Luna está desconectada. Verifique a conexão com o servidor.');return;}
   if(!aiAccessCode){$('aiAccessCode').focus();toast('Insira o código de acesso à Luna primeiro. 🔒');return;}
-  const input=$('chatInput'); input.value='';appendMsg('user',text);
-  busy=true;$('sendBtn').disabled=true;
+  const input=$('chatInput');input.value='';appendMsg('user',text);
+  busy=true;$('sendBtn').disabled=true;$('micBtn').disabled=true;
   const placeholder=appendMsg('assistant','Luna está pensando... ✨');
-  try{
+  try {
     const history=[...chatHistory,{role:'user',content:text}].slice(-16);
     const response=await fetch(apiEndpoint('/api/chat'),{
       method:'POST',headers:{'Content-Type':'application/json','X-Lingo-Code':aiAccessCode},
-      body:JSON.stringify({language,messages:history}),signal:AbortSignal.timeout(45000)
+      body:JSON.stringify({language,level:getCurrentLevel(),mode:$('aiMode').value,spoken,messages:history}),signal:AbortSignal.timeout(65000)
     });
     let data={};try{data=await response.json()}catch{}
     if(!response.ok)throw new Error(data.error||`Erro ${response.status} ao conversar com a Luna.`);
     if(typeof data.reply!=='string'||!data.reply.trim())throw new Error('Resposta vazia do servidor.');
-    placeholder.querySelector('.bubble').textContent=data.reply;
+    formatBubble(placeholder.querySelector('.bubble'),data.reply);
     chatHistory=history.concat({role:'assistant',content:data.reply}).slice(-16);
-  }catch(e){placeholder.querySelector('.bubble').textContent=`Não consegui responder agora. ${e?.message||'Tente novamente.'}`;}
-  finally{busy=false;$('sendBtn').disabled=false;input.focus();$('chatLog').scrollTop=$('chatLog').scrollHeight;}
+    if($('autoReadVoice').checked) readLuna(data.reply);
+  }catch(e){formatBubble(placeholder.querySelector('.bubble'),`Não consegui responder agora. ${e?.message||'Tente novamente.'}`);}
+  finally{busy=false;$('sendBtn').disabled=false;$('micBtn').disabled=false;input.focus();$('chatLog').scrollTop=$('chatLog').scrollHeight;}
 }
-function startMic(){const SpeechRecognition=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SpeechRecognition){toast('Ditado por voz indisponível neste navegador. Tente o Chrome.');return}try{const rec=new SpeechRecognition();rec.lang=codes[language];rec.interimResults=false;rec.maxAlternatives=1;rec.onresult=e=>{$('chatInput').value=e.results[0][0].transcript;toast('Sua fala foi transcrita. Revise e envie!')};rec.onerror=()=>toast('Não foi possível acessar o microfone. Verifique a permissão.');rec.start();toast('Pode falar! 🎙️')}catch{toast('Não foi possível abrir o microfone.')}}
+// Conserva as quebras de linha e mostra negrito Markdown com text nodes, sem executar HTML do modelo.
+function formatBubble(el,content){
+  el.replaceChildren();
+  for(const [i,part] of String(content).split(/\*\*(.*?)\*\*/gs).entries()){
+    if(i%2){const strong=document.createElement('strong');strong.textContent=part;el.append(strong)}
+    else el.append(document.createTextNode(part));
+  }
+}
+function clearVoice(){
+  if(activeRecognition){try{activeRecognition.abort()}catch{}activeRecognition=null}
+  $('micBtn').classList.remove('mic-listening');$('micBtn').setAttribute('aria-pressed','false');
+}
+function stopReading(){if('speechSynthesis' in window)window.speechSynthesis.cancel()}
+function speakText(text,locale){
+  if(!('speechSynthesis' in window)){toast('Leitura em voz alta não está disponível neste navegador.');return}
+  stopReading();const u=new SpeechSynthesisUtterance(text);u.lang=locale;u.rate=.86;u.pitch=1;
+  const available=window.speechSynthesis.getVoices();
+  const voice=available.find(v=>v.lang.toLowerCase()===locale.toLowerCase())||available.find(v=>v.lang.toLowerCase().startsWith(locale.slice(0,2).toLowerCase()));
+  if(voice)u.voice=voice;
+  window.speechSynthesis.speak(u);
+}
+function readLuna(reply){speakText(String(reply).replace(/\*\*/g,'').replace(/[#_`]/g,'').slice(0,2500),'pt-BR')}
+let activeRecognition=null;
+function startMic(){
+  const Recognition=window.SpeechRecognition||window.webkitSpeechRecognition;
+  if(!Recognition){toast('Reconhecimento de fala não disponível. Tente o Chrome ou um navegador compatível.');return}
+  if(activeRecognition){clearVoice();toast('Microfone parado.');return}
+  try{
+    const rec=new Recognition();activeRecognition=rec;
+    rec.lang=$('micLanguage').value==='target'?codes[language]:'pt-BR';rec.interimResults=false;rec.continuous=false;rec.maxAlternatives=1;
+    rec.onstart=()=>{$('micBtn').classList.add('mic-listening');$('micBtn').setAttribute('aria-pressed','true');$('voiceHint').textContent='🔴 Ouvindo... toque novamente para parar.'};
+    rec.onresult=e=>{const transcript=e.results?.[0]?.[0]?.transcript||'';
+      if(transcript){$('chatInput').value=transcript;$('voiceHint').textContent=`Transcrição reconhecida (${rec.lang}): ${transcript}`;
+        if($('autoSendVoice').checked)sendChat(transcript,true);else toast('Fala transcrita: confira e envie quando quiser.');}
+    };
+    rec.onerror=e=>{if(e.error!=='aborted')toast(e.error==='not-allowed'?'Autorize o acesso ao microfone nas configurações do navegador.':'Não foi possível reconhecer a fala. Tente novamente.')};
+    rec.onend=()=>{if(activeRecognition===rec)activeRecognition=null;$('micBtn').classList.remove('mic-listening');$('micBtn').setAttribute('aria-pressed','false');if($('voiceHint').textContent.includes('Ouvindo'))$('voiceHint').textContent='Toque no microfone, fale e revise o texto antes de enviar.'};
+    rec.start();
+  }catch{activeRecognition=null;toast('Não foi possível abrir o microfone.')}
+}
+
+// Práticas A1-C2: missões temáticas. Não representam aprovação formal em um exame CEFR.
+const routeLevels=['A1','A2','B1','B2','C1','C2'];
+const routeNames={A1:'Iniciante',A2:'Básico',B1:'Intermediário',B2:'Independente',C1:'Avançado',C2:'Proficiente'};
+const routes={
+ tr:{
+  A1:{theme:'Cumprimentar e se apresentar',phrases:[['Merhaba! Benim adım Ana.','Olá! Meu nome é Ana.'],['Brezilyalıyım.','Sou brasileira.'],['Türkçe öğreniyorum.','Estou aprendendo turco.']],task:'Apresente-se em duas frases simples.'},
+  A2:{theme:'Combinar planos do dia',phrases:[['Bugün ne yapıyorsun?','O que você vai fazer hoje?'],['Akşam birlikte yemek yiyelim mi?','Vamos jantar juntos à noite?'],['Saat yedide buluşabiliriz.','Podemos nos encontrar às sete.']],task:'Combine um horário e um lugar para se encontrar.'},
+  B1:{theme:'Contar histórias e experiências',phrases:[['Geçen hafta yeni bir yer keşfettim.','Na semana passada descobri um lugar novo.'],['Oraya tekrar gitmek istiyorum.','Quero ir lá novamente.'],['Çünkü kendimi çok mutlu hissettim.','Porque me senti muito feliz.']],task:'Conte uma experiência passada e explique por que gostou dela.'},
+  B2:{theme:'Explicar opiniões e hipóteses',phrases:[['Bence farklı kültürleri tanımak çok değerli.','Acho muito valioso conhecer culturas diferentes.'],['Daha çok vaktim olsaydı daha sık seyahat ederdim.','Se eu tivesse mais tempo, viajaria com mais frequência.'],['Bununla birlikte her yolculuğun zorlukları vardır.','Mesmo assim toda viagem tem seus desafios.']],task:'Defenda uma opinião e apresente uma ressalva.'},
+  C1:{theme:'Expressar nuances e argumentos',phrases:[['Bu konuyu farklı açılardan değerlendirmemiz gerekiyor.','Precisamos avaliar esta questão por diferentes ângulos.'],['İlk bakışta kolay görünse de bazı incelikleri var.','Embora pareça simples à primeira vista, tem nuances.'],['Duyguları açıkça ifade etmek iletişimi güçlendirir.','Expressar sentimentos claramente fortalece a comunicação.']],task:'Desenvolva um argumento com uma concessão e uma conclusão.'},
+  C2:{theme:'Refinar estilo e naturalidade',phrases:[['Sözlerinin satır aralarında derin bir özlem seziliyor.','Nas entrelinhas das suas palavras percebe-se uma saudade profunda.'],['Dil yalnızca düşünceyi aktarmakla kalmaz, onu biçimlendirir de.','A língua não só transmite o pensamento, como também o molda.'],['Bu anlatımı daha zarif ve incelikli kılabiliriz.','Podemos tornar essa expressão mais elegante e sutil.']],task:'Reformule uma ideia abstrata em dois registros diferentes.'}
+ },
+ es:{
+  A1:{theme:'Cumprimentar e se apresentar',phrases:[['¡Hola! Me llamo Ana.','Olá! Meu nome é Ana.'],['Soy brasileña.','Sou brasileira.'],['Estoy aprendiendo español.','Estou aprendendo espanhol.']],task:'Apresente-se em duas frases simples.'},
+  A2:{theme:'Combinar planos do dia',phrases:[['¿Qué haces hoy?','O que você faz hoje?'],['¿Cenamos juntos esta noche?','Jantamos juntos hoje à noite?'],['Podemos vernos a las siete.','Podemos nos ver às sete.']],task:'Combine um horário e um lugar para se encontrar.'},
+  B1:{theme:'Contar histórias e experiências',phrases:[['La semana pasada descubrí un lugar nuevo.','Na semana passada descobri um lugar novo.'],['Me gustaría volver allí.','Eu gostaria de voltar lá.'],['Porque me sentí muy feliz.','Porque me senti muito feliz.']],task:'Conte uma experiência passada e explique por que gostou dela.'},
+  B2:{theme:'Explicar opiniões e hipóteses',phrases:[['Creo que conocer otras culturas es muy valioso.','Acho muito valioso conhecer outras culturas.'],['Si tuviera más tiempo, viajaría con más frecuencia.','Se eu tivesse mais tempo, viajaria com mais frequência.'],['Sin embargo, todo viaje presenta desafíos.','Entretanto, toda viagem apresenta desafios.']],task:'Defenda uma opinião e apresente uma ressalva.'},
+  C1:{theme:'Expressar nuances e argumentos',phrases:[['Conviene analizar esta cuestión desde distintas perspectivas.','Convém analisar essa questão de diferentes perspectivas.'],['Aunque parezca sencillo, entraña ciertos matices.','Embora pareça simples, contém algumas nuances.'],['Expresar las emociones con claridad refuerza la comunicación.','Expressar emoções claramente reforça a comunicação.']],task:'Desenvolva um argumento com uma concessão e uma conclusão.'},
+  C2:{theme:'Refinar estilo e naturalidade',phrases:[['Entre líneas se percibe una nostalgia profunda.','Nas entrelinhas percebe-se uma nostalgia profunda.'],['El lenguaje no solo transmite el pensamiento, sino que también lo configura.','A linguagem não só transmite o pensamento, como também o molda.'],['Podríamos dotar esta expresión de mayor sutileza.','Poderíamos conferir mais sutileza a esta expressão.']],task:'Reformule uma ideia abstrata em dois registros diferentes.'}
+ }
+};
+const romanceDialogs={
+ tr:[
+  {title:'🌞 Bom dia, meu amor',lines:[['Günaydın aşkım!','Bom dia, meu amor!'],['Günün çok güzel geçsin.','Que seu dia seja muito bonito.']]},
+  {title:'💌 Estou com saudade',lines:[['Seni çok özledim.','Senti muita saudade de você.'],['Ben de seni özledim.','Eu também senti sua falta.']]},
+  {title:'☕ Nosso encontro',lines:[['Birlikte kahve içelim mi?','Vamos tomar um café juntos?'],['Tabii ki, çok isterim!','Claro, eu adoraria!']]},
+  {title:'🌙 Boa noite, carinho',lines:[['İyi geceler canım.','Boa noite, meu bem.'],['Tatlı rüyalar aşkım.','Bons sonhos, meu amor.']]}
+ ],
+ es:[
+  {title:'🌞 Bom dia, meu amor',lines:[['¡Buenos días, mi amor!','Bom dia, meu amor!'],['Que tengas un día precioso.','Que você tenha um dia lindo.']]},
+  {title:'💌 Estou com saudade',lines:[['Te extraño mucho.','Sinto muita saudade de você.'],['Yo también te extraño.','Eu também sinto sua falta.']]},
+  {title:'☕ Nosso encontro',lines:[['¿Tomamos un café juntos?','Vamos tomar um café juntos?'],['¡Claro, me encantaría!','Claro, eu adoraria!']]},
+  {title:'🌙 Boa noite, carinho',lines:[['Buenas noches, cariño.','Boa noite, meu bem.'],['Dulces sueños, mi amor.','Bons sonhos, meu amor.']]}
+ ]
+};
+if(!saved.aiLevels||typeof saved.aiLevels!=='object')saved.aiLevels={tr:'A1',es:'A1'};
+if(!saved.levelPractice||typeof saved.levelPractice!=='object')saved.levelPractice={tr:[],es:[]};
+for(const l of ['tr','es']){
+  if(!routeLevels.includes(saved.aiLevels[l]))saved.aiLevels[l]='A1';
+  if(!Array.isArray(saved.levelPractice[l]))saved.levelPractice[l]=[];
+}
+function getCurrentLevel(){return saved.aiLevels[language]||'A1'}
+function setLevel(level){
+  if(!routeLevels.includes(level))return;
+  saved.aiLevels[language]=level;save();renderRoutes();$('aiLevel').value=level;renderLevelProgress();
+}
+function renderRoutes(){
+  const selected=getCurrentLevel();
+  $('levelBadge').textContent=`${selected} · ${routeNames[selected]}`;
+  $('levelTabs').innerHTML=routeLevels.map(l=>`<button class="level-tab ${l===selected?'active':''}" data-level="${l}" aria-pressed="${l===selected}">${l}<small>${saved.levelPractice[language].includes(l)?'✓ Praticado':routeNames[l]}</small></button>`).join('');
+  const lesson=routes[language][selected];const done=saved.levelPractice[language].includes(selected);
+  $('levelDetails').innerHTML=`<div class="panel"><div class="eyebrow">${selected} · ${routeNames[selected]}</div><h2>${escapeHTML(lesson.theme)}</h2><p class="section-caption">Ouça e repita as frases no idioma estudado.</p>${lesson.phrases.map(([target,pt],i)=>`<div class="phrase-row"><div><strong lang="${codes[language]}">${escapeHTML(target)}</strong><p>${escapeHTML(pt)}</p></div><button class="speakbtn" data-route-speak="${i}" aria-label="Ouvir frase ${i+1}" title="Ouvir">🔊</button></div>`).join('')}</div><div class="panel"><div class="eyebrow">MISSÃO DO NÍVEL</div><h2>🎯 Hora de conversar</h2><p class="level-task">${escapeHTML(lesson.task)} A Luna pode ajudar e corrigir suas frases em português brasileiro.</p><div class="level-actions"><button class="btn btn-primary btn-small" data-route-ai="${selected}">✨ Treinar com a Luna</button><button class="btn btn-border btn-small" data-route-done="${selected}">${done?'✓ Treino registrado':'✓ Marcar treino feito'}</button></div><p class="section-caption">Registre apenas esta atividade. O nível escolhido não comprova proficiência.</p></div>`;
+}
+function renderRomance(){
+  $('romanceGrid').innerHTML=romanceDialogs[language].map((d,idx)=>`<article class="romance-card"><h3>${d.title}</h3>${d.lines.map(([text,pt],line)=>`<div class="romance-line"><div style="display:flex;gap:10px;align-items:center"><b lang="${codes[language]}" style="flex:1">${escapeHTML(text)}</b><button class="speakbtn" data-romance-speak="${idx}:${line}" aria-label="Ouvir frase" title="Ouvir">🔊</button></div><p>${escapeHTML(pt)}</p></div>`).join('')}<div class="level-actions"><button class="btn btn-soft btn-small" data-romance-ai="${idx}">💕 Praticar diálogo</button></div></article>`).join('');
+}
+function launchPractice(prompt,mode){
+  activateTab('chat');$('aiMode').value=mode;
+  $('chatInput').value=prompt;$('chatInput').focus();
+  toast('Atividade pronta! Revise a mensagem e envie para a Luna. 💜');
+}
+function renderLevelProgress(){
+  const box=$('levelPracticeProgress');if(!box)return;
+  box.innerHTML=['tr','es'].map(l=>`<div class="level-progress"><strong>${flags[l]} ${names[l]} · ${saved.levelPractice[l].length}/6 atividades</strong><em>${routeLevels.map(level=>saved.levelPractice[l].includes(level)?'●':'○').join(' ')}</em></div>`).join('');
+}
 function bindEvents(){document.querySelectorAll('.navbtn').forEach(b=>b.addEventListener('click',()=>activateTab(b.dataset.tab)));document.querySelectorAll('.lang-pill').forEach(b=>b.addEventListener('click',()=>selectLanguage(b.dataset.lang)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>activateTab(b.dataset.go)));$('heroStart').onclick=()=>openLesson(0);$('viewAll').onclick=e=>{e.preventDefault();activateTab('learn')};$('homeLessons').addEventListener('click',e=>{const b=e.target.closest('[data-open-lesson]');if(b)openLesson(Number(b.dataset.openLesson))});$('flashCard').onclick=()=>{flashBack=!flashBack;renderFlash()};$('flashCard').onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();$('flashCard').click()}};$('flashNext').onclick=()=>moveFlash(1);$('flashPrev').onclick=()=>moveFlash(-1);$('flashSound').onclick=()=>speak(flashWord()[1]);$('lessonSelect').onchange=e=>{lessonIndex=Number(e.target.value);renderLearn()};$('wordList').onclick=e=>{const a=e.target.closest('[data-speak]'),b=e.target.closest('[data-known]');if(a)speak(curriculum[language][lessonIndex].words[Number(a.dataset.speak)][1]);else if(b)toggleKnown(Number(b.dataset.known))};$('markAll').onclick=()=>{let count=0;const lesson=curriculum[language][lessonIndex];lesson.words.forEach((_,i)=>{const id=wordKey(lesson,i);if(!saved.completed[language].includes(id)){saved.completed[language].push(id);count++}});if(count){study();save();toast(`${count} expressões marcadas como aprendidas! 💜`)}else toast('Você já concluiu esta aula!');renderLearn();renderHome()};$('restartQuiz').onclick=()=>newQuiz();$('quizArea').onclick=e=>{const b=e.target.closest('[data-choice]');if(b){chooseAnswer(b);return}if(e.target.closest('#nextQuestion')){questionIndex++;renderQuiz()}else if(e.target.closest('#quizAgain'))newQuiz()};$('chatForm').onsubmit=e=>{e.preventDefault();sendChat($('chatInput').value)};$('clearChat').onclick=resetChat;$('micBtn').onclick=startMic;
   $('aiAccessCode').value=aiAccessCode;
   $('saveAccess').onclick=()=>{const value=$('aiAccessCode').value.trim();if(value.length<12){toast('O código precisa ter pelo menos 12 caracteres.');return;}aiAccessCode=value;try{sessionStorage.setItem('lingo_amor_access_code',value)}catch{}renderChatHeader();toast('Código guardado nesta aba. 💜')};
-  $('retryAI').onclick=()=>checkAI();document.querySelectorAll('[data-prompt]').forEach(b=>b.onclick=()=>sendChat(b.dataset.prompt));$('resetProgress').onclick=()=>{if(confirm('Tem certeza? Todos os pontos e palavras marcadas serão apagados deste navegador.')){saved=fresh();save();renderHome();renderLearn();renderProgress();newQuiz();toast('Seu progresso foi reiniciado.')}}}
-function init(){$('todayDate').textContent='☀️ '+new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'numeric',month:'long'});bindEvents();renderHome();renderLearn();newQuiz();renderProgress();resetChat();checkAI()}
+  $('retryAI').onclick=()=>checkAI();
+  $('aiLevel').onchange=e=>setLevel(e.target.value);
+  $('aiMode').onchange=()=>toast('Modo de prática atualizado. 💜');
+  $('levelTabs').onclick=e=>{const b=e.target.closest('[data-level]');if(b)setLevel(b.dataset.level)};
+  $('levelDetails').onclick=e=>{
+    const sp=e.target.closest('[data-route-speak]');if(sp){speak(routes[language][getCurrentLevel()].phrases[Number(sp.dataset.routeSpeak)][0]);return}
+    const done=e.target.closest('[data-route-done]');if(done){const l=getCurrentLevel(),doneSet=saved.levelPractice[language];if(!doneSet.includes(l)){doneSet.push(l);study();save();toast('Treino registrado! ✨')}renderRoutes();renderLevelProgress();return}
+    const ai=e.target.closest('[data-route-ai]');if(ai){launchPractice(`Sou brasileira e estudo ${names[language].toLowerCase()} no nível ${getCurrentLevel()}. Quero praticar: ${routes[language][getCurrentLevel()].task} Faça uma pergunta de cada vez e corrija minha resposta.`, 'correction')}
+  };
+  $('romanceGrid').onclick=e=>{
+    const sp=e.target.closest('[data-romance-speak]');if(sp){const [i,j]=sp.dataset.romanceSpeak.split(':').map(Number);speak(romanceDialogs[language][i].lines[j][0]);return}
+    const ai=e.target.closest('[data-romance-ai]');if(ai){const d=romanceDialogs[language][Number(ai.dataset.romanceAi)];launchPractice(`Vamos praticar o diálogo romântico “${d.title}” em ${names[language].toLowerCase()}. Você fala uma frase por vez, eu respondo e você corrige meus erros em português brasileiro.`, 'romance')}
+  };
+  document.querySelectorAll('[data-prompt]').forEach(b=>b.onclick=()=>sendChat(b.dataset.prompt));$('resetProgress').onclick=()=>{if(confirm('Tem certeza? Todos os pontos e palavras marcadas serão apagados deste navegador.')){saved=fresh();saved.aiLevels={tr:'A1',es:'A1'};saved.levelPractice={tr:[],es:[]};save();renderHome();renderLearn();renderProgress();renderRoutes();renderRomance();renderLevelProgress();newQuiz();toast('Seu progresso foi reiniciado.')}}}
+function init(){$('todayDate').textContent='☀️ '+new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'numeric',month:'long'});bindEvents();renderHome();renderLearn();newQuiz();renderProgress();renderRoutes();renderRomance();$('aiLevel').value=getCurrentLevel();resetChat();checkAI()}
 init();
 </script>
 </body>
