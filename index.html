@@ -175,7 +175,7 @@ function langDone(l){return saved.completed[l].length}
 function renderStats(){const count=langDone('tr')+langDone('es');$('statXP').textContent=`${saved.xp||0} XP`;$('statWords').textContent=count;$('statStreak').textContent=`${saved.streak||0} ${saved.streak===1?'dia':'dias'}`;}
 function speak(word){if(!('speechSynthesis' in window)){toast('Seu navegador não oferece leitura em voz alta.');return}window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(word);u.lang=codes[language];u.rate=.78;u.pitch=1;window.speechSynthesis.speak(u)}
 function activateTab(tab){if(tab!=='chat')clearVoice();document.querySelectorAll('.tab').forEach(el=>el.classList.toggle('active',el.id===`tab-${tab}`));document.querySelectorAll('.navbtn').forEach(el=>el.classList.toggle('active',el.dataset.tab===tab));$('breadcrumb').textContent={home:'Início',learn:'Minhas aulas',practice:'Praticar',chat:'Tutora IA',progress:'Meu progresso'}[tab];if(tab==='learn')renderLearn();if(tab==='practice'&&!quiz.length)newQuiz();if(tab==='progress')renderProgress();if(tab==='chat')renderChatHeader();window.scrollTo({top:0,behavior:'smooth'})}
-function selectLanguage(l){if(language===l)return;language=l;document.querySelectorAll('.lang-pill').forEach(el=>{const yes=el.dataset.lang===l;el.classList.toggle('selected',yes);el.setAttribute('aria-pressed',yes)});lessonIndex=0;flashIndex=0;flashBack=false;quiz=[];newQuiz();resetChat();renderHome();renderLearn();renderProgress();renderRoutes();renderRomance();renderLevelProgress();$('aiLevel').value=getCurrentLevel();renderChatHeader();toast(`Agora você está estudando ${names[l].toLowerCase()}! ${flags[l]}`)}
+function selectLanguage(l){if(language===l)return;language=l;document.querySelectorAll('.lang-pill').forEach(el=>{const yes=el.dataset.lang===l;el.classList.toggle('selected',yes);el.setAttribute('aria-pressed',yes)});lessonIndex=0;flashIndex=0;flashBack=false;quiz=[];newQuiz();resetChat();$('voiceHint').textContent='Toque no microfone, fale e revise o texto antes de enviar.';renderHome();renderLearn();renderProgress();renderRoutes();renderRomance();renderLevelProgress();$('aiLevel').value=getCurrentLevel();renderChatHeader();toast(`Agora você está estudando ${names[l].toLowerCase()}! ${flags[l]}`)}
 function lessonCard(lesson,index){const n=lesson.words.filter((_,i)=>known(language,lesson,i)).length,p=Math.round(n/lesson.words.length*100);return `<article class="lesson"><div class="lesson-top"><div class="lesson-art" style="background:${lesson.color}">${lesson.emoji}</div><span class="lesson-number">AULA 0${index+1}</span></div><div><h3>${escapeHTML(lesson.title)}</h3><p>${escapeHTML(lesson.desc)}</p></div><div class="mini-progress"><div style="width:${p}%"></div></div><div class="lesson-bottom"><small>${n}/${lesson.words.length} aprendidas</small><button data-open-lesson="${index}" aria-label="Abrir aula ${escapeHTML(lesson.title)}">Estudar →</button></div></article>`}
 function renderHome(){renderStats();$('homeLessons').innerHTML=curriculum[language].map(lessonCard).join('');renderFlash()}
 function flashWord(){return curriculum[language][0].words[flashIndex%curriculum[language][0].words.length]}
@@ -245,13 +245,23 @@ async function sendChat(text,spoken=false){
   }catch(e){formatBubble(placeholder.querySelector('.bubble'),`Não consegui responder agora. ${e?.message||'Tente novamente.'}`);}
   finally{busy=false;$('sendBtn').disabled=false;$('micBtn').disabled=false;input.focus();$('chatLog').scrollTop=$('chatLog').scrollHeight;}
 }
-// Conserva as quebras de linha e mostra negrito Markdown com text nodes, sem executar HTML do modelo.
+// Exibe respostas antigas com **negrito**, *itálico* e marcadores de lista.
+// Cria apenas elementos de texto seguros: nunca interpreta HTML gerado pelo modelo.
 function formatBubble(el,content){
   el.replaceChildren();
-  for(const [i,part] of String(content).split(/\*\*(.*?)\*\*/gs).entries()){
-    if(i%2){const strong=document.createElement('strong');strong.textContent=part;el.append(strong)}
-    else el.append(document.createTextNode(part));
+  const value=String(content??'').replace(/\r\n?/g,'\n').replace(/(^|\n)[ \t]*[-*][ \t]+(?=\S)/g,'$1• ');
+  const markup=/(\*\*[^*\n]+\*\*|(?<!\*)\*[^*\n]+\*(?!\*)|`[^`\n]+`)/g;
+  let position=0;
+  for(const match of value.matchAll(markup)){
+    if(match.index>position) el.append(document.createTextNode(value.slice(position,match.index)));
+    const token=match[0],kind=token.startsWith('**')?'strong':token.startsWith('*')?'em':'code';
+    const trim=kind==='strong'?2:1;
+    const formatted=document.createElement(kind);
+    formatted.textContent=token.slice(trim,-trim);
+    el.append(formatted);
+    position=match.index+token.length;
   }
+  if(position<value.length)el.append(document.createTextNode(value.slice(position)));
 }
 function clearVoice(){
   if(activeRecognition){try{activeRecognition.abort()}catch{}activeRecognition=null}
